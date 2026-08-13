@@ -1,0 +1,33 @@
+// build.gradle (app level) - αντικαταστήστε το android/app/build.gradle
+android {
+    namespace "com.liastravel.app"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.liastravel.app"
+        minSdk 22
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+
+        // Στοιχεία εφαρμογής
+        resValue "string", "app_name", "Lia's Travel"
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            applicationIdSuffix ".debug"
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // Το signing θα γίνει μέσω Android Studio / keystore
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
