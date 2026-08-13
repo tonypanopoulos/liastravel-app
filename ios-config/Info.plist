@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Βασικά στοιχεία εφαρμογής -->
+    <key>CFBundleDisplayName</key>
+    <string>Lia's Travel</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>com.liastravel.app</string>
+
+    <key>CFBundleName</key>
+    <string>LiasTravel</string>
+
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleExecutable</key>
+    <string>App</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <!-- Ελάχιστη έκδοση iOS -->
+    <key>MinimumOSVersion</key>
+    <string>14.0</string>
+
+    <!-- Κύριο storyboard -->
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
+
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+
+    <!-- Προσανατολισμός οθόνης -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- Status bar -->
+    <key>UIStatusBarHidden</key>
+    <false/>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
+
+    <!-- Permissions - Αιτιολογίες για χρήστες -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Η εφαρμογή χρησιμοποιεί την τοποθεσία σας για να εμφανίσει κοντινές ταξιδιωτικές προσφορές.</string>
+
+    <key>NSCameraUsageDescription</key>
+    <string>Η εφαρμογή χρησιμοποιεί την κάμερα για φωτογραφίες προφίλ και εγγράφων.</string>
+
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Η εφαρμογή χρειάζεται πρόσβαση στη βιβλιοθήκη φωτογραφιών.</string>
+
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Η εφαρμογή αποθηκεύει φωτογραφίες στη βιβλιοθήκή σας.</string>
+
+    <!-- ATS - Επιτρέπουμε μόνο HTTPS -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>liastravel.com</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+
+    <!-- URL Schemes -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.liastravel.app</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>liastravel</string>
+            </array>
+        </dict>
+    </dict>
+
+    <!-- Associated Domains (για deep links) -->
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+        <string>applinks:liastravel.com</string>
+    </array>
+
+    <!-- Capacitor -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>Χρησιμοποιείται για ταυτοποίηση στην εφαρμογή.</string>
+</dict>
+</plist>
